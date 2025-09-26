@@ -1,20 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int mark1, mark2, mark3, largest;
+    int num;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
 
-    printf("Enter student mark: ");
-    scanf("%d", &mark1);
-    
-    printf("Enter student mark: ");
-    scanf("%d", &mark2);
-    
-    printf("Enter student mark: ");
-    scanf("%d", &mark3);
+    char *result = (num % 2 == 0) ? "Even" :
+                   (num % 3 == 0) ? "Divisible by 3" :
+				       "Odd and not divisible by 3";
 
-    largest = (mark1 > mark2) ? ((mark1 > mark3) ? mark1 : mark3) : ((mark2 > mark3) ? mark2 : mark3);
-
-    printf("The largest mark is: %d\n", largest);
+    printf("%s\n", result);
 
     return 0;
 }
