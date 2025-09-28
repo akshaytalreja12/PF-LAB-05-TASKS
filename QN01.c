@@ -3,17 +3,17 @@ int main(){
 	char ch1,ch2,ch3;
 	int vow=0,cons=0;
 		
-	printf("\nEnter the first vowel : ");
+	printf("\nEnter the first letter: ");
 	ch1 = getchar();
 	printf("You entered : ");
 	putchar(ch1);
 	getchar();
-	printf("\nEnter the Second vowel : ");
+	printf("\nEnter the Second letter : ");
 	ch2 = getchar();
 	printf("You entered : ");
 	putchar(ch2);
 	getchar();
-	printf("\nEnter the Third vowel : ");
+	printf("\nEnter the Third letter: ");
 	ch3 = getchar();
 	printf("You entered : ");
 	putchar(ch3);
@@ -39,3 +39,4 @@ int main(){
 	printf(" \n total no of consonant : %d",cons);
 	return 0;
 }
+
